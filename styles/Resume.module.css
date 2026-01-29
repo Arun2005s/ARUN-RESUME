@@ -13,7 +13,6 @@
   box-shadow: 0 8px 22px rgba(16, 24, 40, 0.08);
 }
 
-/* HEADER */
 .header {
   position: relative;
   display: grid;
@@ -22,27 +21,6 @@
   border-bottom: 2px solid #2b6cb0;
 }
 
-.closeButton {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 46px;
-  height: 46px;
-  border-radius: 999px;
-  border: 0;
-  background: #4a4f57;
-  color: #fff;
-  font-size: 28px;
-  line-height: 46px;
-  cursor: pointer;
-  display: grid;
-  place-items: center;
-  opacity: 0.9;
-}
-
-.closeButton:hover {
-  opacity: 1;
-}
 
 .profile {
   padding: 18px 18px 20px;
