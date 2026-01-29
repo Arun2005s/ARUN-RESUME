@@ -12,15 +12,6 @@ export default function ResumePage() {
       <main className={styles.page}>
         <article className={styles.container}>
           <header className={styles.header}>
-            <button
-              className={styles.closeButton}
-              type="button"
-              aria-label="Close"
-              onClick={() => window?.history?.back?.()}
-              title="Back"
-            >
-              <span aria-hidden="true">×</span>
-            </button>
 
             <div className={styles.profile}>
               <div className={styles.avatarWrap} aria-hidden="true">
