@@ -22,35 +22,26 @@ export default function ResumePage() {
 
             <aside className={styles.contact}>
               <div className={styles.contactTitle}>
-                <span className={styles.badge}>C</span>
-                <span className={styles.titleText}>ONTACT</span>
+                <span className={styles.titleText}>CONTACT</span>
               </div>
 
               <ul className={styles.contactList}>
                 <li className={styles.contactItem}>
-                  <span className={styles.icon} aria-hidden="true">
-                    <PhoneIcon />
-                  </span>
+                  <span>Phone: </span>
                   <span>+91 93453 09926</span>
                 </li>
                 <li className={styles.contactItem}>
-                  <span className={styles.icon} aria-hidden="true">
-                    <MailIcon />
-                  </span>
+                  <span>Email: </span>
                   <a className={styles.link} href="mailto:arunrealm2005@gmail.com">
                     arunrealm2005@gmail.com
                   </a>
                 </li>
                 <li className={styles.contactItem}>
-                  <span className={styles.icon} aria-hidden="true">
-                    <PinIcon />
-                  </span>
+                  <span>Location: </span>
                   <span>Salem, Tamil Nadu, India</span>
                 </li>
                 <li className={styles.contactItem}>
-                  <span className={styles.icon} aria-hidden="true">
-                    <LinkedInIcon />
-                  </span>
+                  <span>LinkedIn: </span>
                   <a
                     className={styles.link}
                     href="https://linkedin.com/in/arun2005s"
@@ -61,9 +52,7 @@ export default function ResumePage() {
                   </a>
                 </li>
                 <li className={styles.contactItem}>
-                  <span className={styles.icon} aria-hidden="true">
-                    <GitHubIcon />
-                  </span>
+                  <span>GitHub: </span>
                   <a
                     className={styles.link}
                     href="https://github.com/Arun2005s"
@@ -79,7 +68,7 @@ export default function ResumePage() {
 
           <div className={styles.body}>
             <section className={styles.left}>
-              <ResumeSection title="DUCATION" badgeLetter="E">
+              <ResumeSection title="EDUCATION">
                 <ul className={styles.list}>
                   <li className={styles.listItem}>
                     <div className={styles.itemTitle}>B-Tech - IT</div>
@@ -102,7 +91,7 @@ export default function ResumePage() {
                 </ul>
               </ResumeSection>
 
-              <ResumeSection title="CHIEVEMENTS" badgeLetter="A">
+              <ResumeSection title="ACHIEVEMENTS">
                 <ul className={styles.list}>
                   <li className={styles.listItem}>
                     Received “Academic Excellence Award” from Kongu Vellalar Trust at
@@ -115,7 +104,7 @@ export default function ResumePage() {
                 </ul>
               </ResumeSection>
 
-              <ResumeSection title="KILLS" badgeLetter="S">
+              <ResumeSection title="SKILLS">
                 <ul className={styles.list}>
                   <li className={styles.listItem}>Language: C, Java</li>
                   <li className={styles.listItem}>Front End: HTML, CSS</li>
@@ -123,7 +112,7 @@ export default function ResumePage() {
                 </ul>
               </ResumeSection>
 
-              <ResumeSection title="REA OF INTEREST" badgeLetter="A">
+              <ResumeSection title="AREA OF INTEREST">
                 <ul className={styles.list}>
                   <li className={styles.listItem}>Web Technology</li>
                   <li className={styles.listItem}>App Development</li>
@@ -131,7 +120,7 @@ export default function ResumePage() {
                 </ul>
               </ResumeSection>
 
-              <ResumeSection title="ERTIFICATIONS" badgeLetter="C">
+              <ResumeSection title="CERTIFICATIONS">
                 <ul className={styles.list}>
                   <li className={styles.listItem}>
                     MongoDB Associate Developer - [April 2025] - MongoDB, Inc.
@@ -145,7 +134,7 @@ export default function ResumePage() {
             </section>
 
             <section className={styles.right}>
-              <ResumeSection title="AREER OBJECTIVE" badgeLetter="C">
+              <ResumeSection title="CAREER OBJECTIVE">
                 <p className={styles.paragraph}>
                   A very motivated and detail-oriented B.Tech Information Technology
                   student with a strong foundation in computer science principles,
@@ -153,7 +142,7 @@ export default function ResumePage() {
                 </p>
               </ResumeSection>
 
-              <ResumeSection title="ROJECTS" badgeLetter="P">
+              <ResumeSection title="PROJECTS">
                 <div className={styles.project}>
                   <div className={styles.projectTitle}>
                     LEARNIT <span className={styles.projectDash}>-</span>{" "}
@@ -265,7 +254,7 @@ export default function ResumePage() {
                 </div>
               </ResumeSection>
 
-              <ResumeSection title="APERS PRESENTED" badgeLetter="P">
+              <ResumeSection title="PAPERS PRESENTED">
                 <ul className={styles.list}>
                   <li className={styles.listItem}>
                     SPECTRA GENIX&apos;24 - AI in CyberSecurity @ KGISL Institute of
@@ -288,13 +277,10 @@ export default function ResumePage() {
   );
 }
 
-function ResumeSection({ title, badgeLetter, children }) {
+function ResumeSection({ title, children }) {
   return (
     <section className={styles.section}>
       <div className={styles.sectionHeader}>
-        <span className={styles.badge} aria-hidden="true">
-          {badgeLetter}
-        </span>
         <h2 className={styles.sectionTitle}>{title}</h2>
       </div>
       <div className={styles.sectionDivider} aria-hidden="true" />
@@ -303,116 +289,5 @@ function ResumeSection({ title, badgeLetter, children }) {
   );
 }
 
-function PhoneIcon() {
-  return (
-    <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
-      <path
-        d="M6.6 10.8c1.2 2.4 3.2 4.4 5.6 5.6l1.9-1.9c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4c0-.6.4-1 1-1h3.6c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
 
-function MailIcon() {
-  return (
-    <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
-      <path
-        d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5v-9z"
-        stroke="currentColor"
-        strokeWidth="1.6"
-      />
-      <path
-        d="M5.5 7.5 12 12.2l6.5-4.7"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
-function PinIcon() {
-  return (
-    <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
-      <path
-        d="M12 21s7-5.1 7-11a7 7 0 1 0-14 0c0 5.9 7 11 7 11z"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M12 10.5a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4z"
-        stroke="currentColor"
-        strokeWidth="1.6"
-      />
-    </svg>
-  );
-}
-
-function LinkedInIcon() {
-  return (
-    <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
-      <path
-        d="M6.6 9.5V19"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-      />
-      <path
-        d="M6.6 6.3h0"
-        stroke="currentColor"
-        strokeWidth="3.2"
-        strokeLinecap="round"
-      />
-      <path
-        d="M10.2 19v-5.2c0-1.7 1-2.8 2.7-2.8 1.6 0 2.5 1.1 2.5 2.8V19"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M10.2 9.5V11"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-      />
-      <path
-        d="M10.2 11c.5-.9 1.4-1.5 2.7-1.5"
-        stroke="currentColor"
-        strokeWidth="1.2"
-        strokeLinecap="round"
-        opacity="0"
-      />
-    </svg>
-  );
-}
-
-function GitHubIcon() {
-  return (
-    <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
-      <path
-        d="M9.2 19.5c-3.6 1.1-3.6-1.8-5-2.2"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-      />
-      <path
-        d="M14.8 19.5v-2.9c0-.8.3-1.5.8-2-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.2 11.2 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.5-2.7 5.5-5.3 5.8.5.5.9 1.3.9 2.6v2.5"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinejoin="round"
-        strokeLinecap="round"
-      />
-      <path
-        d="M12 20.5c-4.7 0-8.5-3.8-8.5-8.5S7.3 3.5 12 3.5 20.5 7.3 20.5 12"
-        stroke="currentColor"
-        strokeWidth="0"
-        opacity="0"
-      />
-    </svg>
-  );
-}
 

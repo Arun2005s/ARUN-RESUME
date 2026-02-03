@@ -95,8 +95,7 @@
 }
 
 .contactItem {
-  display: grid;
-  grid-template-columns: 22px 1fr;
+  display: flex;
   gap: 10px;
   align-items: center;
   color: #1f2a37;
